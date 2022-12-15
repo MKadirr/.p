@@ -1,6 +1,5 @@
 import os
 import random
-print("beginning")
 
 print("protecting I3 config :")
 tmp = "config" + str(random.randint(0, 123456789))
