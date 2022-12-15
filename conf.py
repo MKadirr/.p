@@ -2,11 +2,18 @@ import os
 import random
 print("beginning")
 
-s = "mv $HOME/afs/.confs/config/i3/config $HOME/afs/.confs/config/i3/config" + str(random.randint(0, 123456789))
+print("protecting I3 config :")
+tmp = "config" + str(random.randint(0, 123456789))
+s = "mv $HOME/afs/.confs/config/i3/config $HOME/afs/.confs/config/i3/" + tmp
 os.system(s)
+print("saved as " + tmp + "\n")
 
+print("Changing i3 confing : ", end = "")
 os.system('cp myconfig $HOME/afs/.confs/config/i3/config')
-os.system('cp troll.jpg $HOME/afs/.confs/troll.jpg')
+print("Done\n")
 
+print("Images : ", end = "")
+os.system('cp -r images $HOME/afs/.confs/')
+print("Done\n")
 
-print("\n    Done")
+print("\nAll Done, enjoy")
