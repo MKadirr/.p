@@ -17,7 +17,7 @@ os.system('cp myconfig $HOME/afs/.confs/config/i3/config')
 print("Done\n")
 
 print("Images : ", end = "")
-os.system('mv -r .images $HOME/afs/.confs/')
+os.system('mv images $HOME/afs/.confs/')
 print("Done\n")
 
 print("\nAll Done, enjoy")
